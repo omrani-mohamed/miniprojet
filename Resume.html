@@ -4,34 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <title>Mohamed Amine Omrani - Resume</title>
-    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <script src="script.js"></script>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/Education.html">Education</a></li>
+                <li><a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/Skills.html">Skills</a></li>
+                <li><a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/languages.html">Languages</a></li>
+                <li><a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/Contact%20Information.html">Contact Information</a></li>
+            </ul>
+        </nav>
+
+        <stront><hr width="100%"></stront>
+
+        <style>
+
+            .section {
+                background-color: #f0f0f0; /* Change to your desired background color */
+                padding: 20px;
+                margin-bottom: 20px;
+            }
     
-    <section>
-        <div >
-            <img src="C:\Users\Hp\Documents\html scripts\WhatsApp Image 2023-11-17 at 13.34.31.jpeg" alt="Mohamed Amine Omrani" width="130" height="130">
-            <div>
-                <p title="Mohamed Amine Omrani">Mohamed Amine Omrani</p>
+            .experiences-table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+    
+            .card-container {
+                display: flex;
+                justify-content: space-between; /* Equal distribution */
+                gap: 20px; /* Space between cards */
+            }
+    
+            .card {
+                flex: 1;
+                background-color: #fff; /* Card background color */
+                padding: 20px;
+                margin: 10px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+            }
+    
+            .card h3 {
+                color: #333; 
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+    
+            .card p {
+                color: #666; 
+                font-size: 16px;
+                line-height: 1.5;
+            }
+    
+            .card img {
+                display: block;
+                width: 200px; 
+                height: 200px; 
+                border-radius: 5px;
+            }
+            table {
+            width: 100%; 
+            border-collapse: collapse;
+        }
+
+        table h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        table p {
+            color: #666;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        table img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        .experiences-table {
+            width: 100%; 
+            border-collapse: collapse;
+        }
+
+        .experiences-table td {
+            width: 50%; 
+        }
+        </style>
+    
+        </header>
+        <section>
+            <div >
+                <img src="C:\Users\Hp\Documents\html scripts\projet web\miniprojet\WhatsApp Image 2023-11-17 at 13.34.31.jpeg" alt="Mohamed Amine Omrani" width="130" height="130">
+                <div>
+                    <p title="Mohamed Amine Omrani">Mohamed Amine Omrani</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <div class="section">
         <h2>Objective</h2>
-        <p>Motivated software engineering student at ESPRIT : Private Higher School of Engineering and Technology.
+        <p>
+            Motivated software engineering student at ESPRIT: Private Higher School of Engineering and Technology.
             Seeking to use proven skills in software development and project management to start my own software company.
+            <span id="moreText" class="hidden-text">
+                I'm passionate about leveraging technology to solve real-world problems and thrive in collaborative environments. 
+                With a strong foundation in programming and a drive to innovate, I aim to make a positive impact through software solutions.
+            </span>
+            <button onclick="toggleText()">Read More</button>
         </p>
     </div>
 
-
-    <footer>
-        <stront><hr width="100%"></stront>
-        <a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/Education.html">Education</a>
-        <a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/Skills.html">Skills</a>
-        <a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/languages.html">languages</a>
-        <a href="file:///C:/Users/Hp/Documents/html%20scripts/projet%20web/miniprojet/Contact%20Information.html">Contact Information</a>
-</footer>
+    <div class="section">
+        <h2>Experiences</h2>
+        <table class="experiences-table">
+            <tr>
+                <td>
+                    <div class="card">
+                        <table>
+                            <tr><h3>Blood transfusion establishments' management application</h3></tr>
+                            <tr><p>I developed an application which manages the establishments of blood transfusion in Tunisia in fast, secure and reliable way and saves all the donations' information to a database using the C language with Glade and GTK+</p></tr>
+                            <tr>
+                                <td><img src="C:\Users\Hp\Documents\html scripts\projet web\miniprojet\img\387467599_711823610901041_3238983303502995889_n.png" alt="Experience 1 Image" width="100" height="100"></td>
+                                <td><img src="C:\Users\Hp\Documents\html scripts\projet web\miniprojet\img\Screenshot from 2023-12-11 19-34-52.png" alt="Experience 1 Image" width="100" height="100"></td>
+                                <td><img src="C:\Users\Hp\Documents\html scripts\projet web\miniprojet\img\Screenshot from 2023-12-11 19-37-39.png" alt="Experience 1 Image" width="100" height="100"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <table>
+                            <tr><h3> Non governmental organization</h3></tr>
+                            <tr><p>I worked with team of other students to lunch an NGO addressing the issue of poverty in Tunisia</p></tr>
+                            <tr>
+                                <td><img src="C:\Users\Hp\Documents\html scripts\projet web\miniprojet\img\380214559_7563609453665882_394258805535065836_n.png" alt="Experience 1 Image" width="100" height="100"></td>
+                                <td><img src="C:\Users\Hp\Documents\html scripts\projet web\miniprojet\img\380318013_2566443960196813_2265958381050134443_n.png" alt="Experience 1 Image" width="100" height="100"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
