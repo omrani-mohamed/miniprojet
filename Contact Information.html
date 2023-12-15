@@ -14,5 +14,62 @@
             LinkedIn: <a href="https://www.linkedin.com/in/myprofile">My Profile</a>
         </p>
     </div>
+    <div>
+        <h2>Contact Form</h2>
+        <form id="contactForm" onsubmit="submitForm(); return false;">
+            <table>
+                <tr>
+                <td><label for="firstName">First Name:</label></td>
+                <td><input type="text" id="firstName" name="firstName" required><br></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last Name:</label></td>
+                <td><input type="text" id="lastName" name="lastName" required><br></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required><br></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" required></textarea><br></td>
+            </tr>
+                <tr><td><input type="submit" value="Submit"></td></tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (firstName == "" || lastName == "" || email == "" || message == "") {
+                alert("Veuillez remplir tous les champs.");
+            } else {
+                var symbol = false;
+                for (var i = 0; i < email.length; i++) {
+                    if (email[i] == '@') {
+                        symbol = true;
+                        break;
+                    }
+                }
+
+                if (!symbol) {
+                    alert("Veuillez entrer une adresse e-mail valide.");
+                } else {
+                    var successMessage = "Formulaire soumis avec succès!\n\n" +
+                                        "Prénom : " + firstName + "\n" +
+                                        "Nom : " + lastName + "\n" +
+                                        "E-mail : " + email + "\n" +
+                                        "Message : " + message;
+
+                    alert(successMessage);
+                }
+            }
+        }
+    </script>
 </body>
 </html>
