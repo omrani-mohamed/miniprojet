@@ -47,7 +47,7 @@
             var message = document.getElementById("message").value;
 
             if (firstName == "" || lastName == "" || email == "" || message == "") {
-                alert("Veuillez remplir tous les champs.");
+                alert("fill all the entries");
             } else {
                 var symbol = false;
                 for (var i = 0; i < email.length; i++) {
@@ -58,11 +58,11 @@
                 }
 
                 if (!symbol) {
-                    alert("Veuillez entrer une adresse e-mail valide.");
+                    alert("enter a valid e-mail adress.");
                 } else {
-                    var successMessage = "Formulaire soumis avec succès!\n\n" +
-                                        "Prénom : " + firstName + "\n" +
-                                        "Nom : " + lastName + "\n" +
+                    var successMessage = "Message sent successfully!\n\n" +
+                                        "first Name : " + firstName + "\n" +
+                                        "Last Name : " + lastName + "\n" +
                                         "E-mail : " + email + "\n" +
                                         "Message : " + message;
 
